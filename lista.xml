@@ -1,0 +1,1839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnidadesDeSaude>
+    <Unidade>
+        <id>421750</id>
+        <nome>SEARA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421755</id>
+        <nome>SERRA ALTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421760</id>
+        <nome>SIDEROPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421770</id>
+        <nome>SOMBRIO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421775</id>
+        <nome>SUL BRASIL</nome>
+    </Unidade>
+    <Unidade>
+        <id>421780</id>
+        <nome>TAIO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421790</id>
+        <nome>TANGARA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421795</id>
+        <nome>TIGRINHOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421800</id>
+        <nome>TIJUCAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421810</id>
+        <nome>TIMBE DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>421820</id>
+        <nome>TIMBO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421825</id>
+        <nome>TIMBO GRANDE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421830</id>
+        <nome>TRES BARRAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421835</id>
+        <nome>TREVISO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421840</id>
+        <nome>TREZE DE MAIO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421850</id>
+        <nome>TREZE TILIAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421860</id>
+        <nome>TROMBUDO CENTRAL</nome>
+    </Unidade>
+    <Unidade>
+        <id>421870</id>
+        <nome>TUBARAO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421875</id>
+        <nome>TUNAPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421880</id>
+        <nome>TURVO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421885</id>
+        <nome>UNIAO DO OESTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421890</id>
+        <nome>URUBICI</nome>
+    </Unidade>
+    <Unidade>
+        <id>421895</id>
+        <nome>URUPEMA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421900</id>
+        <nome>URUSSANGA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421910</id>
+        <nome>VARGEAO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421915</id>
+        <nome>VARGEM</nome>
+    </Unidade>
+    <Unidade>
+        <id>421917</id>
+        <nome>VARGEM BONITA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421920</id>
+        <nome>VIDAL RAMOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421930</id>
+        <nome>VIDEIRA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421935</id>
+        <nome>VITOR MEIRELES</nome>
+    </Unidade>
+    <Unidade>
+        <id>421940</id>
+        <nome>WITMARSUM</nome>
+    </Unidade>
+    <Unidade>
+        <id>421950</id>
+        <nome>XANXERE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421960</id>
+        <nome>XAVANTINA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421970</id>
+        <nome>XAXIM</nome>
+    </Unidade>
+    <Unidade>
+        <id>421985</id>
+        <nome>ZORTEA</nome>
+    </Unidade>
+    <Unidade>
+        <id>001928</id>
+        <nome>0019283 - MATERNIDADE CARMELA DUTRA - FLORIANÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>001930</id>
+        <nome>0019305 - HOSPITAL FLORIANÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>001943</id>
+        <nome>0019437 - REABILITAÇÃO - FLORIANÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>001944</id>
+        <nome>0019445 - CEPON - FLORIANÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>140</id>
+        <nome>2299569 - HOSPITAL SANTO ANTÔNIO - TIMBÉ DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>131</id>
+        <nome>2299836 - HOSPITAL SÃO ROQUE - JACINTO MACHADO</nome>
+    </Unidade>
+    <Unidade>
+        <id>132</id>
+        <nome>2300184 - HOSPITAL SÃO ROQUE - LUZERNA</nome>
+    </Unidade>
+    <Unidade>
+        <id>49</id>
+        <nome>2300435 - HOSPITAL FREI ROGÉRIO - ANITA GARIBALDI</nome>
+    </Unidade>
+    <Unidade>
+        <id>50</id>
+        <nome>2300486 - HOSPITAL SANTA CLARA - OTACILIO COSTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>51</id>
+        <nome>2300516 - HOSPITAL CORAÇÃO DE JESUS - SÃO JOAQUIM</nome>
+    </Unidade>
+    <Unidade>
+        <id>52</id>
+        <nome>2300885 - HOSPITAL SÃO JOSÉ DE URUBICI</nome>
+    </Unidade>
+    <Unidade>
+        <id>53</id>
+        <nome>2301830 - HOSPITAL MAICÉ - CAÇADOR</nome>
+    </Unidade>
+    <Unidade>
+        <id>54</id>
+        <nome>2302101 - HOSPITAL HÉLIO A. ORTIZ - CURITIBANOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>55</id>
+        <nome>2302500 - HOSPITAL DIVINO SALVADOR - VIDEIRA</nome>
+    </Unidade>
+    <Unidade>
+        <id>56</id>
+        <nome>2302543 - HOSPITAL SANTA JULIANA - SALTO VELOSO</nome>
+    </Unidade>
+    <Unidade>
+        <id>57</id>
+        <nome>2302748 - HOSPITAL SANTA CECÍLIA</nome>
+    </Unidade>
+    <Unidade>
+        <id>48</id>
+        <nome>2302780 - HOSPITAL SÃO ROQUE - ARROIO TRINTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>34</id>
+        <nome>2302950 - HOSPITAL SANTA TERESA - SÃO PEDRO DE ALCÂNTARA</nome>
+    </Unidade>
+    <Unidade>
+        <id>230296</id>
+        <nome>2302969 - INSTITUTO DE CARDIOLOGIA - ICSC</nome>
+    </Unidade>
+    <Unidade>
+        <id>141</id>
+        <nome>2305097 - HOSPITAL SÃO SEBASTIÃO - TURVO</nome>
+    </Unidade>
+    <Unidade>
+        <id>133</id>
+        <nome>2305534 - HOSPITAL SÃO JUDAS TADEU - MELEIRO</nome>
+    </Unidade>
+    <Unidade>
+        <id>58</id>
+        <nome>2305623 - HOSPITAL NOSSA SENHORA DE FÁTIMA - PRAIA GRANDE</nome>
+    </Unidade>
+    <Unidade>
+        <id>59</id>
+        <nome>2377187 - HOSPITAL VIDAL RAMOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>60</id>
+        <nome>2377225 - HOSPITAL ANNEGRET NEITZKE - POUSO REDONDO</nome>
+    </Unidade>
+    <Unidade>
+        <id>61</id>
+        <nome>2377330 - HOSPITAL E MATERNIDADE AUXILIADORA - PRES. GETÚLIO</nome>
+    </Unidade>
+    <Unidade>
+        <id>62</id>
+        <nome>2377373 - HOSPITAL TROMBUDO CENTRAL</nome>
+    </Unidade>
+    <Unidade>
+        <id>137</id>
+        <nome>2377462 - HOSPITAL NOSSA SENHORA APARECIDA - RIO DO CAMPO</nome>
+    </Unidade>
+    <Unidade>
+        <id>63</id>
+        <nome>2377616 - HOSPITAL DONA LISETE - TAIO</nome>
+    </Unidade>
+    <Unidade>
+        <id>64</id>
+        <nome>2377632 - HOSPITAL SANTA TEREZINHA - SALETE</nome>
+    </Unidade>
+    <Unidade>
+        <id>65</id>
+        <nome>2377829 - HOSPITAL BOM JESUS - ITUPORANGA</nome>
+    </Unidade>
+    <Unidade>
+        <id>67</id>
+        <nome>2378108 - HOSPITAL MONDAI</nome>
+    </Unidade>
+    <Unidade>
+        <id>68</id>
+        <nome>2378116 - HOSPITAL SÃO LUCAS - GUARACIABA</nome>
+    </Unidade>
+    <Unidade>
+        <id>69</id>
+        <nome>2378140 - HOSPITAL DE TUNAPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>70</id>
+        <nome>2378167 - HOSPITAL SANTA CASA RURAL - SÃO JOÃO DO OESTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>129</id>
+        <nome>2378175 - ASSOCIAÇÃO HOSPITAL GUARUJÁ - GUARUJÁ DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>71</id>
+        <nome>2378183 - HOSPITAL DE IPORÃ</nome>
+    </Unidade>
+    <Unidade>
+        <id>134</id>
+        <nome>2378213 - HOSPITAL SANTA RITA DE CÁSSIA - PALMA SOLA</nome>
+    </Unidade>
+    <Unidade>
+        <id>72</id>
+        <nome>2378809 - HOSPITAL DE CEDRO - SÃO JOSÉ CEDRO</nome>
+    </Unidade>
+    <Unidade>
+        <id>73</id>
+        <nome>2378876 - FUNDAÇÃO MÉDICA - DESCANSO</nome>
+    </Unidade>
+    <Unidade>
+        <id>135</id>
+        <nome>2379163 - HOSPITAL SÃO SEBASTIÃO - PAPANDUVA</nome>
+    </Unidade>
+    <Unidade>
+        <id>74</id>
+        <nome>2379333 - HOSPITAL SÃO VICENTE DE PAULO - MAFRA</nome>
+    </Unidade>
+    <Unidade>
+        <id>35</id>
+        <nome>2379341 - MATERNIDADE CATARINA KUSS - MAFRA</nome>
+    </Unidade>
+    <Unidade>
+        <id>75</id>
+        <nome>2379767 - HOSPITAL DR. J. ATHANÁSIO - CAMPOS NOVOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>76</id>
+        <nome>2380188 - HOSPITAL NOSSA SENHORA DA PAZ - ÁGUA DOCE</nome>
+    </Unidade>
+    <Unidade>
+        <id>77</id>
+        <nome>2380331 - HOSPITAL NOSSA SENHORA DAS DORES - CAPINZAL</nome>
+    </Unidade>
+    <Unidade>
+        <id>78</id>
+        <nome>2385880 - HOSPITAL SÃO CAMILO - IMBITUBA</nome>
+    </Unidade>
+    <Unidade>
+        <id>79</id>
+        <nome>2386038 - HOSPITAL RIO FORTUNA</nome>
+    </Unidade>
+    <Unidade>
+        <id>80</id>
+        <nome>2410834 - HOSPITAL NOSSA SENHORA APARECIDA - ABERLADO LUZ</nome>
+    </Unidade>
+    <Unidade>
+        <id>136</id>
+        <nome>2411164 - HOSPITAL SANTO EXPEDITO - PONTE SERRADA</nome>
+    </Unidade>
+    <Unidade>
+        <id>81</id>
+        <nome>2411245 - ASSOCIAÇÃO HOSPITAL DE VARGEAO</nome>
+    </Unidade>
+    <Unidade>
+        <id>82</id>
+        <nome>2411393 - HOSPITAL SÃO PAULO ASSEC - XANXERÊ</nome>
+    </Unidade>
+    <Unidade>
+        <id>143</id>
+        <nome>2411415 - HOSPITAL FREI BRUNO - XAXIM</nome>
+    </Unidade>
+    <Unidade>
+        <id>138</id>
+        <nome>2418177 - HOSPITAL SÃO FRANCISCO DE ASSIS - SANTO AMARO DA IMP</nome>
+    </Unidade>
+    <Unidade>
+        <id>84</id>
+        <nome>2418304 - HOSPITAL NOSSA SENHORA DA CONCEIÇÃO - ANGELINA</nome>
+    </Unidade>
+    <Unidade>
+        <id>83</id>
+        <nome>2418630 - FUNDAÇÃO TRABALHADOR RURAL - ALFREDO WAGNER</nome>
+    </Unidade>
+    <Unidade>
+        <id>85</id>
+        <nome>2419378 - HOSPITAL CORPO SÃO ROQUE - MORRO DA FUMAÇA</nome>
+    </Unidade>
+    <Unidade>
+        <id>86</id>
+        <nome>2420015 - FUNDAÇÃO HOSPITALAR DE ICARA</nome>
+    </Unidade>
+    <Unidade>
+        <id>37</id>
+        <nome>2436477 - MATERNIDADE DARCY VARGAS - JOINVILLE</nome>
+    </Unidade>
+    <Unidade>
+        <id>36</id>
+        <nome>2436550 - HOSPITAL HANS D. SCHMIDT - JOINVILLE</nome>
+    </Unidade>
+    <Unidade>
+        <id>87</id>
+        <nome>2491710 - HOSPITAL NOSSA SENHORA DA CONCEIÇÃO - TUBARÃO</nome>
+    </Unidade>
+    <Unidade>
+        <id>38</id>
+        <nome>2504332 - MATERNIDADE TEREZA RAMOS - LAGES</nome>
+    </Unidade>
+    <Unidade>
+        <id>88</id>
+        <nome>2513838 - HOSPITAL RIO DO TESTO - POMERODE</nome>
+    </Unidade>
+    <Unidade>
+        <id>89</id>
+        <nome>2537192 - HOSPITAL E MATERNIDADE OASE - TIMBÓ</nome>
+    </Unidade>
+    <Unidade>
+        <id>90</id>
+        <nome>2537826 - HOSPITAL DE PINHALZINHO</nome>
+    </Unidade>
+    <Unidade>
+        <id>128</id>
+        <nome>2537850 - HOSPITAL SANTO ANTÔNIO - CAMPO ERÊ</nome>
+    </Unidade>
+    <Unidade>
+        <id>91</id>
+        <nome>2537958 - HOSPITAL NOSSA SENHORA DA SAÚDE - CORONEL FREITAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>92</id>
+        <nome>2538083 - HOSPITAL DE CAIBI</nome>
+    </Unidade>
+    <Unidade>
+        <id>93</id>
+        <nome>2538148 - HOSPITAL NOVA ERECHIM</nome>
+    </Unidade>
+    <Unidade>
+        <id>94</id>
+        <nome>2538180 - HOSPITAL SÃO JOSÉ DE MARAVILHA</nome>
+    </Unidade>
+    <Unidade>
+        <id>95</id>
+        <nome>2538229 - HOSPITAL DE SAUDADES</nome>
+    </Unidade>
+    <Unidade>
+        <id>96</id>
+        <nome>2538571 - HOSPITAL PADRE J. BERTIHER - SÃO CARLOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>97</id>
+        <nome>2543044 - HOSPITAL SÃO BRAZ - PORTO UNIÃO</nome>
+    </Unidade>
+    <Unidade>
+        <id>139</id>
+        <nome>2550881 - FUNDAÇÃO RURAL DE SÃO MARTINHO</nome>
+    </Unidade>
+    <Unidade>
+        <id>47</id>
+        <nome>2550938 - HOSPITAL SANTO ANTÔNIO - ARMAZÉM</nome>
+    </Unidade>
+    <Unidade>
+        <id>98</id>
+        <nome>2550962 - HOSPITAL CARIDADE DE JAGUARUNA</nome>
+    </Unidade>
+    <Unidade>
+        <id>99</id>
+        <nome>2553066 - HOSPITAL DE MODELO</nome>
+    </Unidade>
+    <Unidade>
+        <id>100</id>
+        <nome>2553155 - FUNDAÇÃO HOSPITALAR SÃO LOURENÇO OESTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>101</id>
+        <nome>2553163 - FUNDAÇÃO MÉDICA DO TRABALHADOR RURAL - CAXAMBU DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>255564</id>
+        <nome>255564 - HOSPITAL H. DE MIRANDA GOMES - SÃO JOSÉ</nome>
+    </Unidade>
+    <Unidade>
+        <id>130</id>
+        <nome>2557975 - HOSPITAL SÃO JORGE - IRANI</nome>
+    </Unidade>
+    <Unidade>
+        <id>102</id>
+        <nome>2560771 - HOSPITAL UNIVERSITÁRIO SANTA TEREZINHA - JOAÇABA</nome>
+    </Unidade>
+    <Unidade>
+        <id>39</id>
+        <nome>2594277 - HOSPITAL E MATERNIDADE SANTA CATARINA - CRICIÚMA</nome>
+    </Unidade>
+    <Unidade>
+        <id>103</id>
+        <nome>2596792 - HOSPITAL SÃO BONIFÁCIO</nome>
+    </Unidade>
+    <Unidade>
+        <id>104</id>
+        <nome>2626659 - HOSPITAL SÃO JOSÉ - TIJUCAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>105</id>
+        <nome>2626667 - HOSPITAL CUNHA PORÃ</nome>
+    </Unidade>
+    <Unidade>
+        <id>106</id>
+        <nome>2652099 - HOSPITAL SÃO CRISTOVÃO - FAXINAL GUEDES</nome>
+    </Unidade>
+    <Unidade>
+        <id>266487</id>
+        <nome>2664879 - HOSPITAL NEREU RAMOS - FLORIANÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>107</id>
+        <nome>2664984 - HOSPITAL REGIONAL DE PALMITOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>108</id>
+        <nome>2664992 - HOSPITAL SANTA LUÍZA - CAMPO ALEGRE</nome>
+    </Unidade>
+    <Unidade>
+        <id>145</id>
+        <nome>2665085 - HOSPITAL NOSSA SENHORA DAS GRAÇAS - BOM RETIRO</nome>
+    </Unidade>
+    <Unidade>
+        <id>110</id>
+        <nome>2665883 - HOSPITAL SANTA TEREZINHA - BRAÇO DO NORTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>142</id>
+        <nome>2666138 - HOSPITAL SÃO LUCAS - XAVANTINA</nome>
+    </Unidade>
+    <Unidade>
+        <id>111</id>
+        <nome>2672839 - HOSPITAL DOM JOAQUIM - SOMBRIO</nome>
+    </Unidade>
+    <Unidade>
+        <id>112</id>
+        <nome>2689863 - HOSPITAL SÃO CAMILO - PERITIBA</nome>
+    </Unidade>
+    <Unidade>
+        <id>269092</id>
+        <nome>2690926 - OTOVIDA - FLORIANÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>113</id>
+        <nome>2691469 - HOSPITAL NOSSA SENHORA DA PENHA LTDA</nome>
+    </Unidade>
+    <Unidade>
+        <id>114</id>
+        <nome>2691477 - HOSPITAL NOSSA SENHORA DO PATROCÍNIO - CAMPO BELO DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>115</id>
+        <nome>2691493 - HOSPITAL OSVALDO CRUZ - ARABUTÃ</nome>
+    </Unidade>
+    <Unidade>
+        <id>116</id>
+        <nome>2691507 - HOSPITAL PIRATUBA - IPIRA</nome>
+    </Unidade>
+    <Unidade>41
+        <id>40</id>
+        <nome>2691515 - HOSPITAL AFFONSO GUIZZO - ARARANGUÁ</nome>
+    </Unidade>
+    <Unidade>
+        <id>117</id>
+        <nome>2691558 - HOSPITAL SÃO MARCOS - NOVA VENEZA</nome>
+    </Unidade>
+    <Unidade>
+        <id>118</id>
+        <nome>2691566 - HOSPITAL SÃO PEDRO - ITÁ</nome>
+    </Unidade>
+    <Unidade>
+        <id>119</id>
+        <nome>2691574 - HOSPITAL SÃO SEBASTIÃO - ANITÁPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>120</id>
+        <nome>2691833 - HOSPITAL E MATERNIDADE SANTO ANTÔNIO - LEBON RÉGIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>269184</id>
+        <nome>2691841 - HOSPITAL CELSO RAMOS - FLORIANÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>269186</id>
+        <nome>2691868 - HOSPITAL INFANTIL JOANA DE GUSMÃO - FLORIANÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>121</id>
+        <nome>2691876 - HOSPITAL LINDÓIA LTDA</nome>
+    </Unidade>
+    <Unidade>
+        <id>41</id>
+        <nome>2691884 - HOSPITAL W. COLAUTTI - IBIRAMA</nome>
+    </Unidade>
+    <Unidade>
+        <id>42</id>
+        <nome>2706369 - INSTITUTO PSIQUIÁTRICO IPQ - SÃO JOSÉ</nome>
+    </Unidade>
+    <Unidade>
+        <id>277877</id>
+        <nome>2778777 - TR HEMODIÁLISE - SÃO JOSÉ</nome>
+    </Unidade>
+    <Unidade>
+        <id>43</id>
+        <nome>2778785 - COLÔNIA SANTANA - SÃO JOSÉ</nome>
+    </Unidade>
+    <Unidade>
+        <id>122</id>
+        <nome>2778858 - HOSPITAL SÃO SEBASTIÃO - TREZE DE MAIO</nome>
+    </Unidade>
+    <Unidade>
+        <id>315723</id>
+        <nome>3157237 - LACEN - FLORIANÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>315724</id>
+        <nome>3157245 - HOSPITAL UNIVERSITÁRIO - FLORIANÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>405972</id>
+        <nome>4059727 - CENTRO ESPECIALIZADO ODONTOLÓGICO - FLORIANÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>405995</id>
+        <nome>4059956 - HEMOSC - FLORIANÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>66</id>
+        <nome>48 - FUNDO MÉDICO SOCIAL RURAL DE SC</nome>
+    </Unidade>
+    <Unidade>
+        <id>123</id>
+        <nome>5749018 - HOSPITAL SAGRADA FAMÍLIA - ITAPIRANGA</nome>
+    </Unidade>
+    <Unidade>
+        <id>44</id>
+        <nome>6048692 - HOSPITAL INFANTIL DR. JESER AMARANTE - JOINVILLE</nome>
+    </Unidade>
+    <Unidade>
+        <id>124</id>
+        <nome>6249604 - HOSPITAL SÃO CAMILO - IPUMIRIM</nome>
+    </Unidade>
+    <Unidade>
+        <id>125</id>
+        <nome>6273874 - HOSPITAL DOM BOSCO - RIO DOS CEDROS</nome>
+    </Unidade>
+    <Unidade>
+        <id>45</id>
+        <nome>6683134 - HOSPITAL TERESINHA GAIO BASSO - SÃO MIGUEL DO OESTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>126</id>
+        <nome>7274351 - HOSPITAL DE FRAIBURGO</nome>
+    </Unidade>
+    <Unidade>
+        <id>782230</id>
+        <nome>7822308 - DEPARTAMENTO DE ODONTOLOGIA - FLORIANÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>109</id>
+        <nome>91 - HOSPITAL INFANTIL SEARA DO BEM</nome>
+    </Unidade>
+    <Unidade>
+        <id>420005</id>
+        <nome>ABDON BATISTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420010</id>
+        <nome>ABELARDO LUZ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420020</id>
+        <nome>AGROLÂNDIA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420030</id>
+        <nome>AGRONÔMICA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420040</id>
+        <nome>ÁGUA DOCE</nome>
+    </Unidade>
+    <Unidade>
+        <id>420050</id>
+        <nome>ÁGUAS DE CHAPECÓ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420055</id>
+        <nome>ÁGUAS FRIAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420060</id>
+        <nome>ÁGUAS MORNAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420070</id>
+        <nome>ALFREDO WAGNER</nome>
+    </Unidade>
+    <Unidade>
+        <id>420075</id>
+        <nome>ALTO BELA VISTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420080</id>
+        <nome>ANCHIETA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420090</id>
+        <nome>ANGELINA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420100</id>
+        <nome>ANITA GARIBALDI</nome>
+    </Unidade>
+    <Unidade>
+        <id>420110</id>
+        <nome>ANITÁPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420120</id>
+        <nome>ANTÔNIO CARLOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420125</id>
+        <nome>APIÚNA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420127</id>
+        <nome>ARABUTÃ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420130</id>
+        <nome>ARAQUARI</nome>
+    </Unidade>
+    <Unidade>
+        <id>420140</id>
+        <nome>ARARANGUÁ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420150</id>
+        <nome>ARMAZÉM</nome>
+    </Unidade>
+    <Unidade>
+        <id>420160</id>
+        <nome>ARROIO TRINTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420165</id>
+        <nome>ARVOREDO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420170</id>
+        <nome>ASCURRA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420180</id>
+        <nome>ATALANTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420190</id>
+        <nome>AURORA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420195</id>
+        <nome>BALNEÁRIO ARROIO DO SILVA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420205</id>
+        <nome>BALNEÁRIO BARRA DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>420200</id>
+        <nome>BALNEÁRIO CAMBORIÚ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420207</id>
+        <nome>BALNEÁRIO GAIVOTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>422000</id>
+        <nome>BALNEÁRIO RINCÃO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420208</id>
+        <nome>BANDEIRANTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>420209</id>
+        <nome>BARRA BONITA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420210</id>
+        <nome>BARRA VELHA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420213</id>
+        <nome>BELA VISTA DO TOLDO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420215</id>
+        <nome>BELMONTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>420220</id>
+        <nome>BENEDITO NOVO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420230</id>
+        <nome>BIGUACU</nome>
+    </Unidade>
+    <Unidade>
+        <id>420240</id>
+        <nome>BLUMENAU</nome>
+    </Unidade>
+    <Unidade>
+        <id>420243</id>
+        <nome>BOCAINA DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>420250</id>
+        <nome>BOM JARDIM DA SERRA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420253</id>
+        <nome>BOM JESUS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420257</id>
+        <nome>BOM JESUS DO OESTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>420260</id>
+        <nome>BOM RETIRO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420245</id>
+        <nome>BOMBINHAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420270</id>
+        <nome>BOTUVERÁ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420280</id>
+        <nome>BRACO DO NORTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>420285</id>
+        <nome>BRACO DO TROMBUDO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420287</id>
+        <nome>BRUNÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420290</id>
+        <nome>BRUSQUE</nome>
+    </Unidade>
+    <Unidade>
+        <id>420300</id>
+        <nome>CAÇADOR</nome>
+    </Unidade>
+    <Unidade>
+        <id>420310</id>
+        <nome>CAIBI</nome>
+    </Unidade>
+    <Unidade>
+        <id>420315</id>
+        <nome>CALMON</nome>
+    </Unidade>
+    <Unidade>
+        <id>420320</id>
+        <nome>CAMBORIÚ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420330</id>
+        <nome>CAMPO ALEGRE</nome>
+    </Unidade>
+    <Unidade>
+        <id>420340</id>
+        <nome>CAMPO BELO DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>420350</id>
+        <nome>CAMPO ERE</nome>
+    </Unidade>
+    <Unidade>
+        <id>420360</id>
+        <nome>CAMPOS NOVOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420370</id>
+        <nome>CANELINHA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420380</id>
+        <nome>CANOINHAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420325</id>
+        <nome>CAPÃO ALTO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420390</id>
+        <nome>CAPINZAL</nome>
+    </Unidade>
+    <Unidade>
+        <id>420395</id>
+        <nome>CAPIVARI DE BAIXO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420400</id>
+        <nome>CATANDUVAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420410</id>
+        <nome>CAXAMBU DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>420415</id>
+        <nome>CELSO RAMOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420417</id>
+        <nome>CERRO NEGRO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420419</id>
+        <nome>CHAPADÃO DO LAGEADO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420420</id>
+        <nome>CHAPECÓ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420425</id>
+        <nome>COCAL DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>420430</id>
+        <nome>CONCÓRDIA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420435</id>
+        <nome>CORDILHEIRA ALTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420440</id>
+        <nome>CORONEL FREITAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420445</id>
+        <nome>CORONEL MARTINS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420455</id>
+        <nome>CORREIA PINTO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420450</id>
+        <nome>CORUPÁ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420460</id>
+        <nome>CRICIÚMA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420470</id>
+        <nome>CUNHA PORÃ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420475</id>
+        <nome>CUNHATÁI</nome>
+    </Unidade>
+    <Unidade>
+        <id>420480</id>
+        <nome>CURITIBANOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420490</id>
+        <nome>DESCANSO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420500</id>
+        <nome>DIONÍSIO CERQUEIRA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420510</id>
+        <nome>DONA EMMA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420515</id>
+        <nome>DOUTOR PEDRINHO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420517</id>
+        <nome>ENTRE RIOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420519</id>
+        <nome>ERMO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420520</id>
+        <nome>ERVAL VELHO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420530</id>
+        <nome>FAXINAL DOS GUEDES</nome>
+    </Unidade>
+    <Unidade>
+        <id>420535</id>
+        <nome>FLOR DO SERTÃO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420540</id>
+        <nome>FLORIANÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420543</id>
+        <nome>FORMOSA DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>420545</id>
+        <nome>FORQUILHINHA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420550</id>
+        <nome>FRAIBURGO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420555</id>
+        <nome>FREI ROGÉRIO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420560</id>
+        <nome>GALVÃO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420570</id>
+        <nome>GAROPABA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420580</id>
+        <nome>GARUVA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420590</id>
+        <nome>GASPAR</nome>
+    </Unidade>
+    <Unidade>
+        <id>420600</id>
+        <nome>GOVERNADOR CELSO RAMOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420610</id>
+        <nome>GRÃO PARÁ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420620</id>
+        <nome>GRAVATAL</nome>
+    </Unidade>
+    <Unidade>
+        <id>420630</id>
+        <nome>GUABIRUBA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420640</id>
+        <nome>GUARACIABA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420650</id>
+        <nome>GUARAMIRIM</nome>
+    </Unidade>
+    <Unidade>
+        <id>420660</id>
+        <nome>GUARUJÁ DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>420665</id>
+        <nome>GUATAMBU</nome>
+    </Unidade>
+    <Unidade>
+        <id>420670</id>
+        <nome>HERVAL D’OESTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>420675</id>
+        <nome>IBIAM</nome>
+    </Unidade>
+    <Unidade>
+        <id>420680</id>
+        <nome>IBICARÉ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420690</id>
+        <nome>IBIRAMA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420700</id>
+        <nome>ICARA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420710</id>
+        <nome>ILHOTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420720</id>
+        <nome>IMARUI</nome>
+    </Unidade>
+    <Unidade>
+        <id>420730</id>
+        <nome>IMBITUBA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420740</id>
+        <nome>IMBUIA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420750</id>
+        <nome>INDAIAL</nome>
+    </Unidade>
+    <Unidade>
+        <id>420757</id>
+        <nome>IOMERÊ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420760</id>
+        <nome>IPIRANGA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420765</id>
+        <nome>IPORÃ DO OESTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>420768</id>
+        <nome>IPUACU</nome>
+    </Unidade>
+    <Unidade>
+        <id>420770</id>
+        <nome>IPUMIRIM</nome>
+    </Unidade>
+    <Unidade>
+        <id>420775</id>
+        <nome>IRACEMINHA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420780</id>
+        <nome>IRANI</nome>
+    </Unidade>
+    <Unidade>
+        <id>420785</id>
+        <nome>IRATI</nome>
+    </Unidade>
+    <Unidade>
+        <id>420790</id>
+        <nome>IRINEÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420800</id>
+        <nome>ITA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420810</id>
+        <nome>ITAIOPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420820</id>
+        <nome>ITAJAI</nome>
+    </Unidade>
+    <Unidade>
+        <id>420830</id>
+        <nome>ITAPEMA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420840</id>
+        <nome>ITAPIRANGA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420845</id>
+        <nome>ITAPOÁ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420850</id>
+        <nome>ITUPORANGA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420860</id>
+        <nome>JABORÁ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420870</id>
+        <nome>JACINTO MACHADO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420880</id>
+        <nome>JAGUARUNA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420890</id>
+        <nome>JARAGUÁ DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>420895</id>
+        <nome>JARDINÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420900</id>
+        <nome>JOAÇABA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420910</id>
+        <nome>JOINVILLE</nome>
+    </Unidade>
+    <Unidade>
+        <id>420915</id>
+        <nome>JOSÉ BOITEUX</nome>
+    </Unidade>
+    <Unidade>
+        <id>420917</id>
+        <nome>JUPIÁ</nome>
+    </Unidade>
+    <Unidade>
+        <id>420920</id>
+        <nome>LACERDÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420930</id>
+        <nome>LAGES</nome>
+    </Unidade>
+    <Unidade>
+        <id>420940</id>
+        <nome>LAGUNA</nome>
+    </Unidade>
+    <Unidade>
+        <id>420945</id>
+        <nome>LAJEADO GRANDE</nome>
+    </Unidade>
+    <Unidade>
+        <id>420950</id>
+        <nome>LAURENTINO</nome>
+    </Unidade>
+    <Unidade>
+        <id>420960</id>
+        <nome>LAURO MÜLLER</nome>
+    </Unidade>
+    <Unidade>
+        <id>420970</id>
+        <nome>LEBON RÉGIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>420980</id>
+        <nome>LEOBERTO LEAL</nome>
+    </Unidade>
+    <Unidade>
+        <id>420985</id>
+        <nome>LINDÓIA DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>420990</id>
+        <nome>LONTRAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421000</id>
+        <nome>LUIZ ALVES</nome>
+    </Unidade>
+    <Unidade>
+        <id>421003</id>
+        <nome>LUZERNA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421005</id>
+        <nome>MACIEIRA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421010</id>
+        <nome>MAFRA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421020</id>
+        <nome>MAJOR GERCINO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421030</id>
+        <nome>MAJOR VIEIRA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421040</id>
+        <nome>MARACAJÁ</nome>
+    </Unidade>
+    <Unidade>
+        <id>421050</id>
+        <nome>MARAVILHA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421055</id>
+        <nome>MAREMA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421060</id>
+        <nome>MASSARANDUBA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421070</id>
+        <nome>MATOS COSTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421080</id>
+        <nome>MELEIRO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421085</id>
+        <nome>MIRIM DOCE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421090</id>
+        <nome>MODELO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421100</id>
+        <nome>MONDAI</nome>
+    </Unidade>
+    <Unidade>
+        <id>421105</id>
+        <nome>MONTE CARLO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421110</id>
+        <nome>MONTE CASTELO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421120</id>
+        <nome>MORRO DA FUMAÇA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421125</id>
+        <nome>MORRO GRANDE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421130</id>
+        <nome>NAVEGANTES</nome>
+    </Unidade>
+    <Unidade>
+        <id>421140</id>
+        <nome>NOVA ERECHIM</nome>
+    </Unidade>
+    <Unidade>
+        <id>421145</id>
+        <nome>NOVA ITABERABA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421150</id>
+        <nome>NOVA TRENTO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421160</id>
+        <nome>NOVA VENEZA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421165</id>
+        <nome>NOVO HORIZONTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421170</id>
+        <nome>ORLEANS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421175</id>
+        <nome>OTACÍLIO COSTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421180</id>
+        <nome>OURO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421185</id>
+        <nome>OURO VERDE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421187</id>
+        <nome>PAIAL</nome>
+    </Unidade>
+    <Unidade>
+        <id>421189</id>
+        <nome>PAINEL</nome>
+    </Unidade>
+    <Unidade>
+        <id>421190</id>
+        <nome>PALHOÇA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421200</id>
+        <nome>PALMA SOLA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421205</id>
+        <nome>PALMEIRA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421210</id>
+        <nome>PALMITOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421220</id>
+        <nome>PAPANDUVA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421223</id>
+        <nome>PARAÍSO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421225</id>
+        <nome>PASSO DE TORRES</nome>
+    </Unidade>
+    <Unidade>
+        <id>421227</id>
+        <nome>PASSOS MAIA</nome>
+    </Unidade>
+    <Unidade>
+        <id>123456</id>
+        <nome>PATO BRANCO - PR</nome>
+    </Unidade>
+    <Unidade>
+        <id>421230</id>
+        <nome>PAULO LOPES</nome>
+    </Unidade>
+    <Unidade>
+        <id>421240</id>
+        <nome>PEDRAS GRANDES</nome>
+    </Unidade>
+    <Unidade>
+        <id>421250</id>
+        <nome>PENHA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421260</id>
+        <nome>PERITIBA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421265</id>
+        <nome>PESCARIA BRAVA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421270</id>
+        <nome>PETROLÂNDIA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421280</id>
+        <nome>PICARRAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421290</id>
+        <nome>PINHALZINHO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421300</id>
+        <nome>PINHEIRO PRETO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421310</id>
+        <nome>PIRATUBA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421315</id>
+        <nome>PLANALTO ALEGRE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421320</id>
+        <nome>POMERODE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421330</id>
+        <nome>PONTE ALTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421335</id>
+        <nome>PONTE ALTA DO NORTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421340</id>
+        <nome>PONTE SERRADA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421350</id>
+        <nome>PORTO BELO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421360</id>
+        <nome>PORTO UNIÃO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421370</id>
+        <nome>POUSO REDONDO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421380</id>
+        <nome>PRAIA GRANDE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421390</id>
+        <nome>PRESIDENTE CASTELO BRANCO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421400</id>
+        <nome>PRESIDENTE GETÚLIO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421410</id>
+        <nome>PRESIDENTE NEREU</nome>
+    </Unidade>
+    <Unidade>
+        <id>120000</id>
+        <nome>PRESÍDIO SÃO PEDRO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421415</id>
+        <nome>PRINCESA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421420</id>
+        <nome>QUILOMBO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421430</id>
+        <nome>RANCHO QUEIMADO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421440</id>
+        <nome>RIO DAS ANTAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421450</id>
+        <nome>RIO DO CAMPO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421460</id>
+        <nome>RIO DO OESTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421470</id>
+        <nome>RIO DOS CEDROS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421480</id>
+        <nome>RIO DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>421490</id>
+        <nome>RIO FORTUNA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421500</id>
+        <nome>RIO NEGRINHO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421505</id>
+        <nome>RIO RUFINO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421507</id>
+        <nome>RIQUEZA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421510</id>
+        <nome>RODEIO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421520</id>
+        <nome>ROMELÂNDIA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421530</id>
+        <nome>SALETE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421535</id>
+        <nome>SALTINHO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421540</id>
+        <nome>SALTO VELLOSO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421545</id>
+        <nome>SANGÃO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421550</id>
+        <nome>SANTA CECÍLIA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421555</id>
+        <nome>SANTA HELENA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421560</id>
+        <nome>SANTA ROSA DE LIMA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421565</id>
+        <nome>SANTA ROSA DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>421567</id>
+        <nome>SANTA TEREZINHA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421568</id>
+        <nome>SANTA TEREZINHA DO PROGRESSO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421569</id>
+        <nome>SANTIAGO DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>421570</id>
+        <nome>SANTO AMARO DA IMPERATRIZ</nome>
+    </Unidade>
+    <Unidade>
+        <id>421580</id>
+        <nome>SÃO BENTO DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>421575</id>
+        <nome>SÃO BERNARDINO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421590</id>
+        <nome>SÃO BONIFÁCIO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421600</id>
+        <nome>SÃO CARLOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421605</id>
+        <nome>SÃO CRISTÓVÃO DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>421610</id>
+        <nome>SÃO DOMINGOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421620</id>
+        <nome>SÃO FRANCISCO DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>421630</id>
+        <nome>SÃO JOÃO BATISTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421635</id>
+        <nome>SÃO JOÃO DO ITAPERIÚ</nome>
+    </Unidade>
+    <Unidade>
+        <id>421625</id>
+        <nome>SÃO JOÃO DO OESTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421640</id>
+        <nome>SÃO JOÃO DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>421650</id>
+        <nome>SÃO JOAQUIM</nome>
+    </Unidade>
+    <Unidade>
+        <id>421660</id>
+        <nome>SÃO JOSÉ</nome>
+    </Unidade>
+    <Unidade>
+        <id>421670</id>
+        <nome>SÃO JOSÉ DO CEDRO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421680</id>
+        <nome>SÃO JOSÉ DO CERRITO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421690</id>
+        <nome>SÃO LOURENÇO DO OESTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421700</id>
+        <nome>SÃO LUDGERO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421710</id>
+        <nome>SÃO MARTINHO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421715</id>
+        <nome>SÃO MIGUEL DA BOA VISTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421720</id>
+        <nome>SÃO MIGUEL D'OESTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421725</id>
+        <nome>SÃO PEDRO DE ALCÂNTARA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421730</id>
+        <nome>SAUDADES</nome>
+    </Unidade>
+    <Unidade>
+        <id>421740</id>
+        <nome>SCHROEDER</nome>
+    </Unidade>
+    <Unidade>
+        <id>421750</id>
+        <nome>SEARA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421755</id>
+        <nome>SERRA ALTA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421760</id>
+        <nome>SIDERÓPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421770</id>
+        <nome>SOMBRIO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421775</id>
+        <nome>SUL BRASIL</nome>
+    </Unidade>
+    <Unidade>
+        <id>421780</id>
+        <nome>TAIO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421790</id>
+        <nome>TANGARÁ</nome>
+    </Unidade>
+    <Unidade>
+        <id>421795</id>
+        <nome>TIGRINHOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421800</id>
+        <nome>TIJUCAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421810</id>
+        <nome>TIMBÉ DO SUL</nome>
+    </Unidade>
+    <Unidade>
+        <id>421820</id>
+        <nome>TIMBÓ</nome>
+    </Unidade>
+    <Unidade>
+        <id>421825</id>
+        <nome>TIMBÓ GRANDE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421830</id>
+        <nome>TRÊS BARRAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421835</id>
+        <nome>TREVISO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421840</id>
+        <nome>TRÊZE DE MAIO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421850</id>
+        <nome>TRÊZE TÍLIAS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421860</id>
+        <nome>TROMBUDO CENTRAL</nome>
+    </Unidade>
+    <Unidade>
+        <id>421870</id>
+        <nome>TUBARÃO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421875</id>
+        <nome>TUNAPOLIS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421880</id>
+        <nome>TURVO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421885</id>
+        <nome>UNIÃO DO OESTE</nome>
+    </Unidade>
+    <Unidade>
+        <id>421890</id>
+        <nome>URUBICI</nome>
+    </Unidade>
+    <Unidade>
+        <id>421895</id>
+        <nome>URUPEMA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421900</id>
+        <nome>URUSSANGA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421910</id>
+        <nome>VARGEAO</nome>
+    </Unidade>
+    <Unidade>
+        <id>421915</id>
+        <nome>VARGEM</nome>
+    </Unidade>
+    <Unidade>
+        <id>421917</id>
+        <nome>VARGEM BONITA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421920</id>
+        <nome>VIDAL RAMOS</nome>
+    </Unidade>
+    <Unidade>
+        <id>421930</id>
+        <nome>VIDEIRA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421935</id>
+        <nome>VITÓRIA MEIRELES</nome>
+    </Unidade>
+    <Unidade>
+        <id>421940</id>
+        <nome>WITMARSUM</nome>
+    </Unidade>
+    <Unidade>
+        <id>421950</id>
+        <nome>XANXERÊ</nome>
+    </Unidade>
+    <Unidade>
+        <id>421960</id>
+        <nome>XAVANTINA</nome>
+    </Unidade>
+    <Unidade>
+        <id>421970</id>
+        <nome>XAXIM</nome>
+    </Unidade>
+    <Unidade>
+        <id>421985</id>
+        <nome>ZORTEA</nome>
+    </Unidade>
+</UnidadesDeSaude>
+
+
+
+
+
+
+
+

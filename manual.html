@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação - Estrutura e Funcionamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 3px;
+            overflow-x: auto;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+
+        <h1>Documentação - Estrutura e Funcionamento</h1>
+
+        <div class="section">
+            <h2>Estrutura de Arquivos</h2>
+            <pre>
+    lista ppi
+    ├── index.html
+    ├── lista.xml
+    ├── lista_pdfs.php
+    ├── message.html
+    └── pasta_pdfs
+            </pre>
+        </div>
+    
+        <div class="section">
+            <h2>1. <code>lista_pdfs.php</code></h2>
+            <p>
+                Este script PHP realiza duas funções principais:
+            </p>
+            <ul>
+                <li><strong>Listar PDFs:</strong> Quando não há parâmetros de solicitação (<code>$_GET</code>), o script lê a pasta <code>pasta_pdfs</code>, 
+                filtra os arquivos PDF e associa a cada arquivo o nome da unidade de saúde correspondente, extraído de <code>lista.xml</code>. A lista 
+                de arquivos PDF e seus nomes de unidade é então retornada como um JSON.</li>
+                <li><strong>Detalhes de PDF Específico:</strong> Quando há um parâmetro <code>pdf</code> na solicitação (<code>$_GET['pdf']</code>), o script 
+                extrai o ID do nome do arquivo PDF e usa este ID para buscar o nome da unidade de saúde no arquivo XML. Em seguida, retorna um JSON 
+                contendo o ID, o nome da unidade e o nome do arquivo PDF.</li>
+            </ul>
+            <h3>Código</h3>
+            <pre><code>&lt;?php
+    // Define a pasta onde estão os arquivos PDF
+    $folder = "pasta_pdfs";
+    
+    // Define o caminho para o arquivo XML
+    $xmlFile = 'lista.xml';
+    
+    // Função para buscar o nome da unidade de saúde pelo ID
+    function getUnitNameById($id, $xmlFile) {
+        if (file_exists($xmlFile)) {
+            $xml = simplexml_load_file($xmlFile);
+            foreach ($xml->Unidade as $unidade) {
+                $unitId = (string)$unidade->id;
+                $unitId = ltrim($unitId, '0');
+                if ($unitId === $id) {
+                    return (string)$unidade->nome;
+                }
+            }
+        }
+        return 'Nome da unidade não encontrado.';
+    }
+    
+    // Verifica se há uma solicitação de PDF específica
+    if (isset($_GET['pdf'])) {
+        $pdfName = $_GET['pdf'];
+    
+        $idMatch = preg_match('/^(\d+)_/', $pdfName, $matches);
+        if ($idMatch) {
+            $id = $matches[1];
+            $id = ltrim($id, '0');
+            $unitName = getUnitNameById($id, $xmlFile);
+            echo json_encode([
+                'id' => $id,
+                'unit_name' => $unitName,
+                'pdf_name' => $pdfName
+            ]);
+        } else {
+            echo json_encode([
+                'id' => 'ID não encontrado.',
+                'unit_name' => 'Nome da unidade não encontrado.',
+                'pdf_name' => $pdfName
+            ]);
+        }
+    } else {
+        if (is_dir($folder)) {
+            $files = scandir($folder);
+            $pdf_files = array_diff($files, array('.', '..'));
+    
+            $pdf_files_with_unit = [];
+            foreach ($pdf_files as $file) {
+                if (strtolower(pathinfo($file, PATHINFO_EXTENSION)) === 'pdf') {
+                    $idMatch = preg_match('/^(\d+)_/', $file, $matches);
+                    if ($idMatch) {
+                        $id = ltrim($matches[1], '0');
+                        $unitName = getUnitNameById($id, $xmlFile);
+                        $pdf_files_with_unit[] = [
+                            'file' => $file,
+                            'unit_name' => $unitName
+                        ];
+                    } else {
+                        $pdf_files_with_unit[] = [
+                            'file' => $file,
+                            'unit_name' => 'Nome da unidade não encontrado.'
+                        ];
+                    }
+                }
+            }
+            echo json_encode($pdf_files_with_unit);
+        } else {
+            echo json_encode([]);
+        }
+    }
+    ?&gt;</code></pre>
+        </div>
+    
+        <div class="section">
+            <h2>2. <code>index.html</code></h2>
+            <p>
+                Esta é a página principal que exibe a lista de PDFs e um iframe para visualizar o PDF selecionado:
+            </p>
+            <ul>
+                <li><strong>Estilo e Layout:</strong> Define a estrutura da página com uma lista de PDFs no lado esquerdo e um visualizador de PDFs no lado 
+                direito. Inclui estilos CSS para o layout e aparência.</li>
+                <li><strong>JavaScript (jQuery/Zepto):</strong> Carrega a lista de PDFs a partir de <code>lista_pdfs.php</code> e cria elementos de lista 
+                (&lt;li&gt;) com o nome da unidade e o nome do arquivo. Adiciona interatividade para atualizar o iframe quando um PDF é selecionado.</li>
+                <li><strong>Carregamento de PDF:</strong> Quando um item da lista é clicado, o iframe é atualizado com o caminho para o PDF selecionado. 
+                Também faz uma solicitação AJAX para obter e exibir informações sobre o PDF no <code>#unit-info</code>.</li>
+            </ul>
+            <h3>Código</h3>
+            <pre><code>&lt;!DOCTYPE html&gt;
+    &lt;html lang="pt-br"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title>PPI - Termos de Compromisso de Garantia de Acessos Gerais - SES/SC&lt;/title&gt;
+        &lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;
+        &lt;link rel="icon" href="/favicon.ico" type="image/x-icon"&gt;
+        &lt;script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+        &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"&gt;&lt;/script&gt;
+        &lt;style&gt;
+            /* Seu CSS personalizado */
+            body {
+                display: flex;
+                margin: 0;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+                overflow: hidden;
+            }
+            #pdf-list-container {
+                width: 25%;
+                padding: 10px;
+                border-right: 2px solid #ddd;
+                overflow-y: auto;
+            }
+            #pdf-list {
+                list-style-type: none;
+                padding: 0;
+            }
+            #pdf-list li {
+                padding-top: 12px;
+                padding-right: 0;
+                padding-bottom: 12px;
+                padding-left: 10px;
+                cursor: pointer;
+                border-bottom: 1px solid #ddd;
+            }
+            #pdf-list li:hover {
+                background-color: #f0f0f0;
+            }
+            #pdf-viewer-container {
+                width: 75%;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+            #pdf-viewer {
+                width: 100%;
+                height: 80%;
+                border: none;
+            }
+            #unit-info {
+                margin-top: 10px;
+                font-size: 1.2em;
+            }
+            .editable-title {
+                display: block;
+                padding: 5px;
+                border: 1px solid #ddd;
+                background-color: #f9f9f9;
+                font-weight: bold;
+                color: #333;
+                font-size: 13px;
+                margin-bottom: 5px;
+            }
+            .file-item {
+                display: block;
+            }
+            .unit-name {
+                font-weight: bold;
+                color: #333;
+                font-size: 13px;
+                line-height: 2;
+            }
+            #unit-id, #pdf-name {
+                display: none;
+            }
+            .file-name {
+                color: #555;
+                font-size: 12px;
+            }
+            .logo-container {
+                text-align: start;
+                margin-bottom: 10px;
+            }
+            #title {
+                display: none!important;
+                /* Permite a edição do conteúdo */
+            }
+            #pdf-viewer-container {
+                width: 75%;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                height: 1074px;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div id="pdf-list-container"&gt;
+            &lt;div class="logo-container"&gt;
+                &lt;img src="logo-sc.png" alt="Logotipo" style="max-width: 100%; height: auto;"&gt;
+            &lt;/div&gt;
+             &lt;h3&gt;&lt;i class="far fa-calendar-alt"&gt;&lt;/i&gt; COMPETÊNCIA: setembro 2024&lt;/h3&gt;
+            &lt;ul id="pdf-list"&gt;
+                <!-- A lista de PDFs será carregada aqui via JavaScript -->
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div id="pdf-viewer-container"&gt;
+            &lt;iframe id="pdf-viewer" src="message.html" frameborder="0"&gt;&lt;/iframe&gt;
+            &lt;div id="unit-info"&gt;
+                &lt;span id="unit-id" class="editable-title"&gt;ID: &lt;/span&gt;
+                &lt;span id="unit-name" class="editable-title"&gt;Nome da Unidade: &lt;/span&gt;
+                &lt;span id="pdf-name" class="editable-title"&gt;Nome do Arquivo PDF: &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    
+        &lt;script&gt;
+            $(document).ready(function() {
+                // Função para carregar o PDF selecionado
+                function loadPdf(fileName) {
+                    var pdfViewer = $('#pdf-viewer');
+                    pdfViewer.attr('src', 'pasta_pdfs/' + fileName);
+    
+                    $.ajax({
+                        url: 'lista_pdfs.php',
+                        method: 'GET',
+                        data: { pdf: fileName },
+                        dataType: 'json',
+                        success: function(response) {
+                            $('#unit-id').text('ID: ' + response.id);
+                            $('#unit-name').text('Nome da Unidade: ' + response.unit_name);
+                            $('#pdf-name').text('Nome do Arquivo PDF: ' + response.pdf_name);
+                        },
+                        error: function() {
+                            $('#unit-info').html('Erro ao buscar as informações.');
+                        }
+                    });
+    
+                    // Adiciona um delay para garantir que o iframe esteja carregado
+                    pdfViewer.on('load', function() {
+                        var iframe = pdfViewer[0];
+                        var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+    
+                        if (iframeDocument) {
+                            var style = document.createElement('style');
+                            style.textContent = `
+                                #title {
+                                    color: red;
+                                    font-size: 20px;
+                                }
+                            `;
+                            iframeDocument.head.appendChild(style);
+                        }
+                    });
+                }
+    
+                // Carregar a lista de PDFs ao carregar a página
+                loadPdfList();
+    
+                // Evento de clique na lista de PDFs
+                $('#pdf-list').on('click', 'li', function() {
+                    var fileName = $(this).data('file');
+                    loadPdf(fileName);
+                });
+    
+                // Função para carregar a lista de PDFs
+                function loadPdfList() {
+                    $.ajax({
+                        url: 'lista_pdfs.php',
+                        method: 'GET',
+                        dataType: 'json',
+                        success: function(data) {
+                            var $pdfList = $('#pdf-list');
+                            $pdfList.empty();
+                            $.each(data, function(index, item) {
+                                $pdfList.append('&lt;li data-file="' + item.file + '"&gt;' +
+                                    '&lt;span class="unit-name"&gt;' + item.unit_name + '&lt;/span&gt;&lt;br&gt;' +
+                                    '&lt;span class="file-name"&gt;' + item.file + '&lt;/span&gt;' +
+                                '&lt;/li&gt;');
+                            });
+    
+                            $('#pdf-list-container').show();
+                            $('#pdf-viewer-container').show();
+                        },
+                        error: function() {
+                            alert('Erro ao carregar a lista de PDFs.');
+                        }
+                    });
+                }
+                
+            });
+        &lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+        </div>
+    
+        <div class="section">
+            <h2>3. <code>message.html</code></h2>
+            <p>
+                Esta é uma página HTML simples usada como uma tela inicial padrão do iframe, exibindo uma mensagem centralizada. Serve como uma página de 
+                fallback antes que um PDF seja carregado no iframe.
+            </p>
+            <h3>Código</h3>
+            <pre><code>&lt;!DOCTYPE html&gt;
+    &lt;html lang="pt-br"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title>Mensagem Inicial&lt;/title&gt;
+        &lt;style&gt;
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+            }
+            .message {
+                text-align: center;
+                font-size: 1.5em;
+                color: #333;
+            }
+            #title {
+                display: none!important;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class="message"&gt;
+            PPI - Termos de Compromisso de Garantia de Acessos Gerais
+        &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+        </div>
+    
+        <div class="section">
+            <h2>4. <code>lista.xml</code></h2>
+            <p>
+                Um arquivo XML que contém informações sobre as unidades de saúde. Cada unidade tem um ID e um nome. Esse XML é usado pelo <code>lista_pdfs.php</code> 
+                para mapear IDs de PDFs para nomes de unidades.
+            </p>
+            <h3>Código</h3>
+            <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+    &lt;UnidadesDeSaude&gt;
+        &lt;Unidade&gt;
+            &lt;id&gt;421750&lt;/id&gt;
+            &lt;nome&gt;SEARA&lt;/nome&gt;
+        &lt;/Unidade&gt;
+    
+        aqui vão os demais arquivos listados no xml...
+    
+        &lt;Unidade&gt;
+            &lt;id&gt;421985&lt;/id&gt;
+            &lt;nome&gt;ZORTEA&lt;/nome&gt;
+        &lt;/Unidade&gt;
+    &lt;/UnidadesDeSaude&gt;</code></pre>
+        </div>
+    
+        <div class="section">
+            <h2>Resumo do Fluxo de Funcionamento</h2>
+            <ul>
+                <li><strong>Carregamento da Lista de PDFs:</strong> Ao carregar o <code>index.html</code>, o JavaScript faz uma solicitação AJAX para <code>lista_pdfs.php</code>, 
+                que retorna uma lista de PDFs com seus nomes de unidade correspondentes. A lista é exibida na página no elemento &lt;ul&gt;.</li>
+                <li><strong>Visualização do PDF:</strong> Quando um item da lista é clicado, o JavaScript atualiza o <code>src</code> do iframe para o caminho do PDF selecionado. 
+                Também solicita informações detalhadas sobre o PDF. As informações sobre o PDF, como o ID da unidade e o nome, são exibidas na área de informações 
+                (<code>#unit-info</code>).</li>
+                <li><strong>Fallback Inicial:</strong> <code>message.html</code> é carregado inicialmente no iframe como uma tela de introdução até que um PDF seja selecionado.</li>
+            </ul>
+            <p>Esses arquivos e scripts trabalham juntos para criar uma interface interativa que permite visualizar PDFs de uma pasta e exibir informações associadas a cada PDF.</p>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

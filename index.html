@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPI - Termos de Compromisso de Garantia de Acessos Gerais - SES/SC</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf_viewer.min.css">
+
+    <style>
+        /* Seu CSS personalizado */
+        body {
+            display: flex;
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        #pdf-list-container {
+            width: 25%;
+            padding: 10px;
+            border-right: 2px solid #ddd;
+            overflow-y: auto;
+        }
+        #pdf-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        #pdf-list li {
+            padding-top: 12px;
+            padding-right: 0;
+            padding-bottom: 12px;
+            padding-left: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+        }
+        #pdf-list li:hover {
+            background-color: #f0f0f0;
+        }
+        #pdf-viewer-container {
+            width: 75%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        #pdf-viewer {
+            width: 100%;
+            height: 80%;
+            border: none;
+        }
+        #unit-info {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        .editable-title {
+            display: block;
+            padding: 5px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            font-weight: bold;
+            color: #333;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        .file-item {
+            display: block;
+        }
+        .unit-name {
+            font-weight: bold;
+            color: #333;
+            font-size: 13px;
+            line-height: 2;
+        }
+        #unit-id, #pdf-name {
+            display: none;
+        }
+        .file-name {
+            color: #555;
+            font-size: 12px;
+        }
+        .logo-container {
+            text-align: start;
+            margin-bottom: 10px;
+        }
+        #pdf-viewer-container {
+            width: 75%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 1074px;
+        }
+    </style>
+</head>
+<body>
+    <div id="pdf-list-container">
+        <div class="logo-container">
+            <img src="logo-sc.png" alt="Logotipo" style="max-width: 100%; height: auto;">
+        </div>
+         <h3><i class="far fa-calendar-alt"></i> COMPETÊNCIA: setembro 2024</h3>
+        <ul id="pdf-list">
+            <!-- A lista de PDFs será carregada aqui via JavaScript -->
+        </ul>
+    </div>
+    <div id="pdf-viewer-container">
+        <iframe id="pdf-viewer" src="message.html" frameborder="0"></iframe>
+        <div id="unit-info">
+            <span id="unit-id" class="editable-title">ID: </span>
+            <span id="unit-name" class="editable-title">Nome da Unidade: </span>
+            <span id="pdf-name" class="editable-title">Nome do Arquivo PDF: </span>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Função para carregar o PDF selecionado
+            function loadPdf(fileName) {
+                var pdfViewer = $('#pdf-viewer');
+                pdfViewer.attr('src', 'pasta_pdfs/' + fileName);
+
+                $.ajax({
+                    url: 'lista_pdfs.php',
+                    method: 'GET',
+                    data: { pdf: fileName },
+                    dataType: 'json',
+                    success: function(response) {
+                        $('#unit-id').text('ID: ' + response.id);
+                        $('#unit-name').text('Nome da Unidade: ' + response.unit_name);
+                        $('#pdf-name').text('Nome do Arquivo PDF: ' + response.pdf_name);
+                    },
+                    error: function() {
+                        $('#unit-info').html('Erro ao buscar as informações.');
+                    }
+                });
+
+                // Adiciona um delay para garantir que o iframe esteja carregado
+                pdfViewer.on('load', function() {
+                    var iframe = pdfViewer[0]; // Acessa o elemento DOM do iframe
+                    var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+
+                    // Verifica se o iframe tem o documento carregado
+                    if (iframeDocument) {
+                        // Injetar CSS no conteúdo do iframe para alterar a cor do #title
+                        var style = document.createElement('style');
+                        style.textContent = `
+                            #title {
+                                color: red; /* Altera a cor do texto para vermelho */
+                                font-size: 20px; /* Altera o tamanho da fonte */
+                            }
+                        `;
+
+                        iframeDocument.head.appendChild(style); // Adiciona o estilo no <head> do iframe
+                    }
+                });
+            }
+
+            // Carregar a lista de PDFs ao carregar a página
+            loadPdfList();
+
+            // Evento de clique na lista de PDFs
+            $('#pdf-list').on('click', 'li', function() {
+                var fileName = $(this).data('file');
+                loadPdf(fileName);
+            });
+
+            // Função para carregar a lista de PDFs
+            function loadPdfList() {
+                $.ajax({
+                    url: 'lista_pdfs.php',
+                    method: 'GET',
+                    dataType: 'json',
+                    success: function(data) {
+                        var $pdfList = $('#pdf-list');
+                        $pdfList.empty();
+                        $.each(data, function(index, item) {
+                            $pdfList.append('<li data-file="' + item.file + '">' +
+                                '<span class="unit-name">' + item.unit_name + '</span><br>' +
+                                '<span class="file-name">' + item.file + '</span>' +
+                            '</li>');
+                        });
+
+                        $('#pdf-list-container').show();
+                        $('#pdf-viewer-container').show();
+                    },
+                    error: function() {
+                        alert('Erro ao carregar a lista de PDFs.');
+                    }
+                });
+            }
+            
+        });
+
+
+
+    </script>
+</body>
+</html>
